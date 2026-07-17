@@ -1,0 +1,17 @@
+.stacked-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the inner content */
+}
+
+.stacked-heading h2 {
+  text-align: center;
+  display: inline-block; /* Fits the lines to the text width */
+  padding: 0px 0; /* Spacing between text and lines */
+  
+  /* Top Line customization */
+  border-top: 3px solid #00ff00; /* Thickness, style, color */
+  
+  /* Bottom Line customization */
+  border-bottom: 3px solid #00ff00; /* Thickness, style, color */
+}

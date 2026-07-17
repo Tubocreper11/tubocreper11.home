@@ -1,0 +1,6 @@
+. {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  justify-items: center; /* Centers the content inside each column */
+  gap: 15px;
+}

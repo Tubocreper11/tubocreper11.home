@@ -1,0 +1,63 @@
+/* Make the table and its major components behave like a single container */
+table, thead, tbody {
+    display: block;
+    width: 100%;
+}
+
+/* Apply your 4-column grid layout specifically to the table rows */
+tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    justify-items: center; /* Centers the content inside each column */
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ensure table headers and cells span naturally within the row grid */
+th, td {
+    display: block;
+    width: 100%;
+}
+
+/* 
+ * Class to place on any <td> or <th> that contains your <div> items.
+ * This ensures the inner divs don't break the cell alignment.
+ */
+.div-container-cell {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+
+/* --- Your Stacked Heading Styles (Compatible) --- */
+
+.stacked-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.stacked-heading h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.stacked-heading a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.stacked-heading a:hover font {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
